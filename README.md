@@ -1,4 +1,4 @@
-# genshin-grind
+# GenshinGrind
 
 ## Project setup
 ```
