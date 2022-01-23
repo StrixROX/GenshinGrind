@@ -24,7 +24,7 @@
 
 <script>
 export default {
-	name: "AddCharCard",
+	name: "AddCharCardDialogue",
 	data() {
 		return {
 			all_chars: null,

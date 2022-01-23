@@ -12,7 +12,7 @@
 		</div>
 
 		<div v-if="showAddCharDialog">
-			<AddCharCard @closeAddCharCardDialogue="showAddCharDialog=false" @charSelected="charSelected" />
+			<AddCharCardDialogue @closeAddCharCardDialogue="showAddCharDialog=false" @charSelected="charSelected" />
 		</div>
 	</div>
 </template>
@@ -23,15 +23,15 @@ import { defineAsyncComponent } from 'vue'
 const CharCard = defineAsyncComponent(
 	() => import(/* webpackChunkName: "CharCard" */ "./components/CharCard.vue")
 );
-const AddCharCard = defineAsyncComponent(
-	() => import(/* webpackChunkName: "AddCharCard" */ "./components/AddCharCard.vue")
+const AddCharCardDialogue = defineAsyncComponent(
+	() => import(/* webpackChunkName: "AddCharCardDialogue" */ "./components/AddCharCardDialogue.vue")
 );
 
 export default {
 	name: "App",
 	components: {
 		CharCard,
-		AddCharCard,
+		AddCharCardDialogue,
 	},
 	data() {
 		return {
