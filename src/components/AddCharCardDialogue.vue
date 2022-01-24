@@ -80,17 +80,6 @@ export default {
 	padding: 0 0 40px 0;
 }
 
-.add-char-dialog .close-btn {
-	display: block;
-	position: absolute;
-	top: 20px;
-	right: 25px;
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	cursor: pointer;
-}
-
 .add-char-dialog .choose-chars {
 	display: flex;
 	width: 100%;
@@ -112,5 +101,9 @@ export default {
 	height: 120px;
 	border: 1px solid #ccc;
 	border-radius: 100%;
+	transition: transform 0.2s;
+}
+.add-char-dialog .choose-chars .char .char-icon:hover {
+	transform: scale(1.1);
 }
 </style>
